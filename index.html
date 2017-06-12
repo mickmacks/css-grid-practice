@@ -1,0 +1,174 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Grid Demo</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<header class="header">
+		<h1 class="header-copy">Five Minute Grids</h1>
+		<h4 class="header-copy">by <a href="https://www.github.com/mickmacks">@mickmacks</a></h4>
+	</header>
+
+	<main>
+
+		<div class="section">
+
+			<h1>Introduction</h1>
+
+			<p>CSS grids provide browser-wide* built-in grid functionality that can replace the need for loading bootstrap, foundation, or materialize grid systems. CSS Grids are handled using three main properties — Grids, Rows & Columns, and Gaps. Working in conjunction, these properties create grid templates that we can populate with content. </p>
+
+			<p>CSS Grids allow us to easily align, justify and order content within our grid</p>
+
+		</div>
+
+		<div class="section">
+
+			<h1>Grids</h1>
+
+			<p>Parent elements <em> (darker blue) </em> are used to contain and structure child elements <em>(lighter blue)</em> in rows and columns. The first example uses "display: grid;", turning it's children into block level elements while the second two use "display: inline-grid", with the child items only taking as much space as needed.</p>
+
+
+			<div class="code-block">
+				<p>display: grid;</p>
+			</div>
+
+			<div class="grid-01">
+				<div class="item">Tell me why</div>
+				<div class="item">Ain't nothing but a heartache</div>
+				<div class="item">Tell me why</div>
+			</div>
+
+			<div class="code-block">
+				<p>display: inline-grid;</p> 
+			</div>
+
+			<div class="grid-02">
+				<div class="item">Some</div>
+				<div class="item">Body</div>
+				<div class="item">Once</div>
+			</div>
+
+			<div class="grid-03">
+				<div class="item">Hey Now,</div>
+				<div class="item">You're An</div>
+				<div class="item">All-Star</div>
+			</div>
+			
+		</div>
+
+		<div class="section">
+
+			<h1>Rows & Columns</h1>
+
+			<p>Once a parent grid is set up, we can begin specifying rules for our rows and columns using "grid-template-row" or "grid-template-column". We can also now begin to use "fr", a <em>fractional unit</em>, to do percentage based math divisions for us.
+
+			<br>
+			<br>
+
+			Have you ever split something up evenly between X number of people, only to realize you miscounted? Or the number later changed? Fractional units let us instantaneously correct portion sizes without having to do the math. </p>
+
+			<div class="code-block">
+				<p>grid-template-rows: 50px 100px;</p>
+				<p>grid-template-columns: 50px 100px;</p>
+			</div>
+
+			<div class="row-column-01">
+				<div class="item">If you wanna be my lover,</div>
+				<div class="item">You gotta get with my friends.</div>
+				<div class="item">Make it last forever,</div>
+				<div class="item">Friendship never ends.</div>
+			</div>
+
+			<div class="row-column-02">
+				<div class="item">You'll always be a part of me.</div>
+				<div class="item">I'm part of you indefinitely.</div>
+				<div class="item">Boy, don't you know you can't escape me.</div>
+				<div class="item">Ooh, darling, 'cause you'll always be my baby.</div>
+			</div>
+
+			<div class="row-column-03">
+				<div class="item">Don't</div>
+				<div class="item">Go</div>
+				<div class="item">Chasing</div>
+				<div class="item">Waterfalls</div>
+			</div>
+
+			<div class="row-column-04">
+				<div class="item">Oh</div>
+				<div class="item">The taste of your lips,</div>
+				<div class="item">I'm on a ride.</div>
+				<div class="item">You're toxic,</div>
+				<div class="item">I'm slipping under.</div>
+			</div>
+			
+		</div>
+
+		<div class="section">
+
+			<h1>Gaps</h1>
+
+			<p>As you may have guessed, once we have our grid structure and child elements sized how we want them, the last main component is gaps (also known as gutters in typography). This is pretty simple, you just specify what you want the overall grid gaps to be, or specify just the rows or columns.</p>
+
+			<div class="code-block">
+				<p>grid-gap: 2rem;</p>
+				<p>grid-row-gap: 2rem;</p>
+				<p>grid-column-gap: 2rem;</p>
+			</div>
+
+			<div class="gap-01">
+				<div class="item">If there was a problem, yo,</div>
+				<div class="item">I'll solve it.</div>
+				<div class="item">Check out the hook,</div>
+				<div class="item">While my DJ revolves it.</div>
+			</div>
+
+			<div class="gap-02">
+				<div class="item">I get knocked down,</div>
+				<div class="item">But I get up again.</div>
+				<div class="item">You're never gonna</div>
+				<div class="item">Keep me down.</div>
+			</div>
+
+		</div>
+
+		<div class="section">
+
+			<h1>Ordering</h1>
+
+			<p>While this is barely at the surface of CSS Grids, Flex Box is another (more widely accepted) in-browser feature that further lets us structure CSS grids and elements. For example, ordering. </p>
+
+				<div class="order-01">
+				<div class="flex-item">2. Under the sunlight,</div>
+				<div class="flex-item">1. With arms wide open,</div>
+				<div class="flex-item">4. I'll show you everything.</div>
+				<div class="flex-item">3. Welcome to this place.</div>
+				<div class="flex-item">5. With arms wide open…</div>
+
+			</div>
+
+		</div>
+
+		<div class="section">
+
+			<h1>Closing & Resources</h1>
+
+			<p>Pretty awesome, right? So, you're probably asking, what's the difference between CSS Grids and flexbox? Beats me! It seems that Flexbox gives grid containers more control over their children, and provides additional features lacking in the CSS grid. More on this in the next lightning talk. For now, check out the further reading below for more information:</p>
+
+			<a href="http://learncssgrid.com/"> CSS Grid Guide</a> <br>
+			<a href="https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35"> How Flexbox Works (An Animated Guide)</a> <br>
+			<a href="http://vudav.github.io/flexbox-cheatsheet/"> Flex Box Cheatsheet</a> <br>
+			<a href="https://caniuse.com/#search=grid"> *Can I Use? CSS Grid: 67%</a> <br>
+			<a href="https://caniuse.com/#search=flex"> *Can I Use? Flexbox: 98%</a> <br>
+
+			<br>
+
+			<p>Thanks for reading!</p>
+
+		</div>
+
+	</main>
+	
+</body>
+</html>
